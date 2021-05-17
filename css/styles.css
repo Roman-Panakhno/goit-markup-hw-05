@@ -107,7 +107,7 @@ section {
   fill: #afb1b8;
 
   /*== Задержка фокус/ховер ==*/
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -157,7 +157,7 @@ section {
   color: var(--alt-titel-cl);
 
   /*== Задержка фокус/ховер ==*/
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:focus,
@@ -205,7 +205,7 @@ section {
   fill: var(--title-cl);
 
   /*== Задержка фокус/ховер ==*/
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-add {
@@ -301,7 +301,7 @@ section {
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -536,7 +536,7 @@ section {
   align-items: center;
 
   /*== Задержка фокус/ховер ==*/
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon:hover,
@@ -573,7 +573,8 @@ section {
   fill: #afb1b8;
 
   /*== Задержка фокус/ховер ==*/
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners-link:focus,
@@ -689,7 +690,9 @@ section {
   padding: 6px 22px;
 
   /*== Задержка фокус/ховер ==*/
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:focus,
@@ -778,7 +781,9 @@ section {
   overflow: hidden;
 }
 
-.portfolio-li:hover .portfolio-box {
+/* Добавлен фокус*/
+.portfolio-li:hover .portfolio-box,
+.portfolio-li:focus .portfolio-box {
   transform: translatey(0);
 }
 
